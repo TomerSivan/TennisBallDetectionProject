@@ -4,16 +4,6 @@ import math
 import time
 
 
-def findPositiveX(y,a,b,c):
-    numMinus = (-b+math.sqrt(b**2-4*a*(c-y)))/(2*a)
-    numPlus = (-b-math.sqrt(b**2-4*a*(c-y)))/(2*a)
-
-    if numMinus<600 and numMinus>0:
-        return numMinus
-    elif numPlus<600 and numPlus>0:
-        return numPlus
-    return 600
-
 cap = cv.VideoCapture("TennisBall/vid4Edit_Trim.mp4")
 # cap = cv.VideoCapture(0)
 
